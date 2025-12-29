@@ -99,6 +99,12 @@
         </header>
 
         <section>
+            <p>Asking Gemini 3 to generate Brainf*ck code results in an infinite loop, akin amost to a DDoS attack:</p>
+            <img src="bf.gif" style="width:auto; height:500px">
+            <p>That is fascinating. So it made me wonder.
+            Is Brainf*ck the ultimate test for AGI?
+            I think so, and for 3 good reasons.
+            </p>
             <h2>1. The Data Scarcity Problem</h2>
             <p>Large Language Models (LLMs) thrive on sheer volume. To master JavaScript, an LLM has been trained on
                 virtually every available line of open-source code—hundreds of millions of lines of code (LOC). By
@@ -125,18 +131,19 @@
         </section>
 
         <section>
-            <h2>3. The Execution Paradox</h2>
-            <p>There is another limitation for LLMs, but it is so distinct that an example serves best: Asking a modern
-                model for complex Brainf*ck code often results in the model falling into an infinite loop—spewing the
-                same characters over and over <em>ad infinitum</em>.</p>
+            <h2>3. The Repetition Problem</h2>
+              <div class="loop-box">
+            <p>As we saw earlier, asking a modern model for complex Brainf*ck code often results in the model falling into an infinite loop—spewing the same characters over and over. The minimalistic nature of the language results in highly repetitive structures in the code. This poses a unique challenge to the way LLMs work.</p>
+            <p>An LLM is more likely to output what it has already seen based on previous tokens, and that pertains to its own output too. When some structure is repeated more than a couple of times, there is a likelihood that the model may learn that token <strong>X</strong> is the most likely output following <strong>itself</strong>. With every subsequent iteration, this increases the likelihood of outputting <strong>X</strong> in a self-fulfilling prophecy, resulting in the infinite loop.</p>
+        </div>
         </section>
 
         <section>
-            <p>So, is Brainf*ck the ultimate test for LLMs? You be the judge. I am just a nobody.</p>
+            <p> <strong>So, is Brainf*ck the ultimate test for LLMs? You be the judge.</strong></p>
         </section>
 
         <footer>
-            Posted on the Web. Minimalist by design.
+            Teodor
         </footer>
     </article>
 
